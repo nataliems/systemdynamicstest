@@ -59,6 +59,6 @@ closedTasks.equation = completionRate
 # define flows
 completionRate.equation = sd.max(0.0, sd.min(openTasks, staff*(productivity/effortPerTask)))
 
-# plots
+# plots for first stage
 model.plot_lookup("productivity")
 closedTasks.plot()
