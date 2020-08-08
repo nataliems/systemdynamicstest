@@ -62,3 +62,88 @@ completionRate.equation = sd.max(0.0, sd.min(openTasks, staff*(productivity/effo
 # plots for first stage
 model.plot_lookup("productivity")
 closedTasks.plot()
+
+## MODEL COMPLETE ##
+## CREATE FRAMEWORK ##
+
+import BPTK_Py
+bptk = BPTK_Py.bptk()
+
+# create scenario manager
+scenario_manager = {
+    "smSimpleProjectManagementDSL":{
+
+    "model": model,
+    "base_constants": {
+        "deadline": 100.0,
+        "initialStaff": 1.0,
+        "effortPerTask": 1.0,
+        "initialOpenTasks": 100.0,
+
+    },
+    "base_points":{
+            "productivity": [
+                [0.0,0.4],
+                [0.25,0.444],
+                [0.5,0.506],
+                [0.75,0.594],
+                [1,1],
+                [1.25,1.119],
+                [1.5,1.1625],
+                [1.75,1.2125],
+                [2,1.2375],
+                [2.25,1.245],
+                [2.5,1.25]
+            ]
+    }
+ }
+}
+
+# register scenario manager
+bptk.register_scenario_manager(scenario_manager)
+
+# create a scenario
+bptk.register_scenarios(
+    scenarios =
+        {
+            "scenario80": {
+                "constants": {
+                    "initialOpenTasks": 80.0
+                }
+            }
+        }
+    ,
+    scenario_manager="smSimpleProjectManagementDSL")
+
+# plot the scenario
+bptk.plot_scenarios(
+    scenarios="scenario80",
+    scenario_managers="smSimpleProjectManagementDSL",
+    equations="openTasks")
+
+# register a few more scenarios
+bptk.register_scenarios(
+    scenarios =
+    {
+         "scenario100": {
+
+        },
+        "scenario120": {
+            "constants": {
+                "initialOpenTasks" : 120.0
+            }
+        }
+    },
+    scenario_manager="smSimpleProjectManagementDSL")
+
+# compare scenarios
+bptk.plot_scenarios(
+    scenarios="scenario80,scenario100,scenario120",
+    scenario_managers="smSimpleProjectManagementDSL",
+    equations="openTasks",
+    series_names={
+        "smSimpleProjectManagementDSL_scenario80_openTasks":"scenario80",
+        "smSimpleProjectManagementDSL_scenario100_openTasks":"scenario100",
+        "smSimpleProjectManagementDSL_scenario120_openTasks":"scenario120"
+    }
+)
