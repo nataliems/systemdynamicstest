@@ -7,3 +7,5 @@
 (c) https://repository.tudelft.nl/islandora/object/uuid:10980974-69c3-4357-962f-d923160ab638/datastream/OBJ/link.pdf
 
 (d) https://bptk.transentis-labs.com/en/latest/docs/sd-dsl/in-depth/in_depth_sd_dsl/in_depth_sd_dsl.html
+
+(e) https://www.transentis.com/resources/tutorials/introduction-to-system-dynamics/stock-and-flow-diagrams/
