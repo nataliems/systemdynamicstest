@@ -50,8 +50,8 @@ armsstock_A.equation = arming_A
 armsstock_B.equation = arming_B
 
 # define flows
-arming_A.equation = autonomous_A + relative_A
-arming_B.equation = autonomous_B + relative_B
+arming_A.equation = sd.max(0.0,(autonomous_A + relative_A)) # flows must be nonnegative
+arming_B.equation = sd.max(0.0,(autonomous_B + relative_B)) # flows must be nonnegative
 
 # What are the differencees between A and B? ONLY the overassessment rate!
 
