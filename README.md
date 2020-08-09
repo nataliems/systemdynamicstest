@@ -3,9 +3,11 @@
 ## Step 1: System Dynamics in Anti-Trafficking
 
 Konrad, R. A., Trapp, A.C., Palmbach, T.M., & Blom, J.S. Overcoming human trafficking via operations research and analytics: Opportunities for methods, models, and applications. European Journal of Operational Research, 259(2):733–745, June 1, 2017 (published online 2 November 2016).
+
 Pre-print version retrieved here: https://cdn1.sph.harvard.edu/wp-content/uploads/sites/134/2017/02/For-Lovison-Overcoming-Human-Trafficking-via-Operations-Research-and-Analytic.pdf
 
 Kovari, A., & Pruyt, E. (2012). *Prostitution and human trafficking: A model-based exploration and policy analysis.* Paper presented at the Proceedings of the 30th International Conference of the System Dynamics Society.
+
 Retrieved from: https://pdfs.semanticscholar.org/d9cb/665cde162a981f980e62cc9a7d3ec99f8d30.pdf?_ga=2.160553913.509324212.1596834487-860304490.1596834487
 
 ## Step 2: Basic Introduction to SD with Code Example (SDexample1.py)
