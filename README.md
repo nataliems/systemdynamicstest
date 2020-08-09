@@ -12,7 +12,7 @@ transetis consulting. (2020). Introduction to system dynamics. Retrieved from ht
 
 transetis labs. (2020). BPTK_PY Docs 1.1: A simple Python library for system dynamics. Retrieved from https://bptk.transentis-labs.com/en/latest/docs/sd-dsl/in-depth/in_depth_sd_dsl/in_depth_sd_dsl.html 
 
-## Step 3: Brief Read System Dynamics Textbook
+## Step 3: Brief Read System Dynamics Textbook (SDexample2.py)
 
 Pruyt, E., 2013. *Small System Dynamics Models for Big Issues: Triple Jump towards Real-World Complexity.* Delft: TU Delft Library. 324p.
 
